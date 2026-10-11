@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precisa Contabilidade e Assessoria Tributária</title>
+    
+    <!-- Bootstrap CSS 5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #333;
+        }
+
+        /* Cores Personalizadas */
+        .bg-navy {
+            background-color: #0F2027;
+        }
+        .text-accent {
+            color: #17EAD9;
+        }
+        .bg-light-custom {
+            background-color: #F8F9FA;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+            color: white;
+            padding: 100px 0 80px 0;
+        }
+
+        .hero-icon {
+            font-size: 3.5rem;
+            color: #00d2ff;
+        }
+
+        /* Cards de Serviços */
+        .card-service {
+            border: none;
+            border-radius: 12px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+        .card-service:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .icon-box {
+            width: 60px;
+            height: 60px;
+            background-color: rgba(15, 32, 39, 0.08);
+            color: #0F2027;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        /* Botão do WhatsApp Float */
+        .btn-whatsapp-float {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            background-color: #25D366;
+            color: white;
+            border-radius: 50px;
+            padding: 12px 24px;
+            font-weight: 600;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+        }
+        .btn-whatsapp-float:hover {
+            background-color: #1eb954;
+            color: white;
+        }
+
+        .info-badge {
+            background-color: #eef2f5;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #0F2027;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Menu de Navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-navy sticky-top shadow-sm py-3">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center fw-bold" href="#">
+                <i class="bi bi-calculator-fill text-info me-2 fs-3"></i>
+                <span>Precisa <span class="text-info">Contabilidade</span></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto fw-semibold">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre Nós</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#institucional">Dados da Empresa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Seção Principal (Hero) -->
+    <header id="inicio" class="hero">
+        <div class="container">
+            <div class="row align-items-center gy-4">
+                <div class="col-lg-7">
+                    <span class="badge bg-info text-dark mb-3 px-3 py-2 rounded-pill fw-bold">CRC: RN-001030/O</span>
+                    <h1 class="display-4 fw-bold mb-3">Gestão Contábil e Estratégia Tributária Eficiente</h1>
+                    <p class="lead mb-4 text-light opacity-75">
+                        Oferecemos soluções contábeis de precisão, assessoria tributária e consultoria em gestão para o crescimento seguro da sua empresa em Caicó e região.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#contato" class="btn btn-info btn-lg fw-bold text-dark px-4">Falar com Especialista</a>
+                        <a href="#servicos" class="btn btn-outline-light btn-lg px-4">Nossos Serviços</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 text-center">
+                    <div class="bg-white text-dark p-4 rounded-4 shadow-lg">
+                        <i class="bi bi-shield-check hero-icon d-block mb-2"></i>
+                        <h4 class="fw-bold">Excelência Contábil</h4>
+                        <p class="text-muted small">Análise rigorosa para otimizar impostos, manter sua empresa 100% regularizada e maximizar seus lucros.</p>
+                        <hr>
+                        <div class="d-flex justify-content-around text-center mt-3">
+                            <div>
+                                <h5 class="fw-bold mb-0">Simples</h5>
+                                <small class="text-muted">Nacional</small>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold mb-0">Matriz</h5>
+                                <small class="text-muted">Caicó/RN</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Seção Sobre Nós -->
+    <section id="sobre" class="py-5">
+        <div class="container py-4">
+            <div class="row align-items-center gy-4">
+                <div class="col-lg-6">
+                    <h6 class="text-info fw-bold text-uppercase">Sobre a Empresa</h6>
+                    <h2 class="fw-bold mb-3">Precisa Contabilidade e Assessoria Tributária LTDA</h2>
+                    <p class="text-secondary">
+                        A <strong>Precisa Contabilidade</strong> (razão social <em>Mts Soares Contabilidade e Assessoria Tributária LTDA</em>) é uma Empresa de Pequeno Porte (EPP) fundada em Caicó/RN, comprometida com a ética, eficiência e inovação no setor contábil.
+                    </p>
+                    <p class="text-secondary">
+                        Sob a liderança da Sócia-Administradora <strong>Mariana Taysa Santos Soares</strong>, atuamos no auxílio a empresários para tomadas de decisões estratégicas, gestão de riscos operacionais e planejamento fiscal seguro.
+                    </p>
+                    <div class="row g-3 mt-2">
+                        <div class="col-6">
+                            <div class="d-flex align-items-center gap-2">
+                                <i class="bi bi-check-circle-fill text-info fs-5"></i>
+                                <span class="fw-semibold">Registro Ativo no CRC</span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex align-items-center gap-2">
+                                <i class="bi bi-check-circle-fill text-info fs-5"></i>
+                                <span class="fw-semibold">Optante pelo Simples</span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex align-items-center gap-2">
+                                <i class="bi bi-check-circle-fill text-info fs-5"></i>
+                                <span class="fw-semibold">Foco em Resultados</span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex align-items-center gap-2">
+                                <i class="bi bi-check-circle-fill text-info fs-5"></i>
+                                <span class="fw-semibold">Atendimento Humano</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card bg-navy text-white p-4 rounded-4 shadow">
+                        <h4 class="fw-bold mb-3 text-info"><i class="bi bi-award me-2"></i>Diferenciais Competitivos</h4>
+                        <ul class="list-unstyled d-flex flex-column gap-3">
+                            <li class="d-flex gap-3">
+                                <i class="bi bi-graph-up-arrow text-info fs-4"></i>
+                                <div>
+                                    <strong>Consultoria de Gestão Empresarial:</strong> Além do cumprimento das obrigações, ajudamos a estruturar o crescimento da sua empresa.
+                                </div>
+                            </li>
+                            <li class="d-flex gap-3">
+                                <i class="bi bi-percent text-info fs-4"></i>
+                                <div>
+                                    <strong>Auditoria & Planejamento Tributário:</strong> Mapeamento constante para redução legal da carga tributária.
+                                </div>
+                            </li>
+                            <li class="d-flex gap-3">
+                                <i class="bi bi-geo-alt text-info fs-4"></i>
+                                <div>
+                                    <strong>Localização Estratégica:</strong> Prontos para atender Caicó e todo o estado do Rio Grande do Norte.
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Serviços / CNAEs -->
+    <section id="servicos" class="bg-light-custom py-5">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h6 class="text-info fw-bold text-uppercase">Nossas Soluções</h6>
+                <h2 class="fw-bold">Serviços Contábeis e Consultoria</h2>
+                <p class="text-muted">Atuações desenvolvidas com rigor técnico para maximizar seus resultados.</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Atividade Principal -->
+                <div class="col-md-4">
+                    <div class="card card-service h-100 p-4">
+                        <div class="icon-box">
+                            <i class="bi bi-file-earmark-spreadsheet"></i>
+                        </div>
+                        <h5 class="fw-bold">Atividades de Contabilidade</h5>
+                        <p class="text-muted small">CNAE Principal: 69.20-6-01</p>
+                        <p class="text-secondary">
+                            Escrituração contábil e fiscal completa, demonstrações financeiras, balanços, relatórios gerenciais e acompanhamento contínuo das obrigações legais da sua empresa.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Secundária 1 -->
+                <div class="col-md-4">
+                    <div class="card card-service h-100 p-4">
+                        <div class="icon-box">
+                            <i class="bi bi-search-heart"></i>
+                        </div>
+                        <h5 class="fw-bold">Auditoria e Consultoria Tributária</h5>
+                        <p class="text-muted small">CNAE Secundário: 69.20-6-02</p>
+                        <p class="text-secondary">
+                            Análise minuciosa de tributos, revisão fiscal, recuperação de créditos e consultoria especializada para prevenir contingências e otimizar pagamentos de impostos.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Secundária 2 -->
+                <div class="col-md-4">
+                    <div class="card card-service h-100 p-4">
+                        <div class="icon-box">
+                            <i class="bi bi-briefcase"></i>
+                        </div>
+                        <h5 class="fw-bold">Consultoria em Gestão Empresarial</h5>
+                        <p class="text-muted small">CNAE Secundário: 70.20-4-00</p>
+                        <p class="text-secondary">
+                            Orientações para tomada de decisão, reorganização financeira, planejamento estratégico e estruturação de processos internos para alavancar seu negócio.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Transparência / Dados Cadastrais -->
+    <section id="institucional" class="py-5">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h6 class="text-info fw-bold text-uppercase">Transparência</h6>
+                <h2 class="fw-bold">Informações Institucionais</h2>
+                <p class="text-muted">Dados oficiais e registro perante os órgãos competentes.</p>
+            </div>
+
+            <div class="row g-3">
+                <div class="col-md-3 col-sm-6">
+                    <div class="p-3 border rounded text-center bg-white shadow-sm h-100">
+                        <i class="bi bi-card-heading fs-2 text-info"></i>
+                        <h6 class="fw-bold mt-2 mb-1">CNPJ</h6>
+                        <p class="small text-muted mb-0">47.082.386/0001-91</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="p-3 border rounded text-center bg-white shadow-sm h-100">
+                        <i class="bi bi-patch-check fs-2 text-info"></i>
+                        <h6 class="fw-bold mt-2 mb-1">Registro CRC</h6>
+                        <p class="small text-muted mb-0">RN-001030/O</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="p-3 border rounded text-center bg-white shadow-sm h-100">
+                        <i class="bi bi-building fs-2 text-info"></i>
+                        <h6 class="fw-bold mt-2 mb-1">Porte / Natureza</h6>
+                        <p class="small text-muted mb-0">EPP - Sociedade LTDA</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="p-3 border rounded text-center bg-white shadow-sm h-100">
+                        <i class="bi bi-cash-coin fs-2 text-info"></i>
+                        <h6 class="fw-bold mt-2 mb-1">Regime Tributário</h6>
+                        <p class="small text-muted mb-0">Simples Nacional</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-4 p-4 bg-light-custom rounded-4 border">
+                <div class="row align-items-center">
+                    <div class="col-md-8">
+                        <h5 class="fw-bold mb-1">Razão Social:</h5>
+                        <p class="text-muted mb-2">Mts Soares Contabilidade e Assessoria Tributaria LTDA</p>
+                        <h5 class="fw-bold mb-1">Sócio-Administrador:</h5>
+                        <p class="text-muted mb-0">Mariana Taysa Santos Soares</p>
+                    </div>
+                    <div class="col-md-4 text-md-end mt-3 mt-md-0">
+                        <span class="badge bg-success px-3 py-2 fs-6"><i class="bi bi-check-circle me-1"></i> Situação Cadastral: Ativa</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Contato e Localização -->
+    <section id="contato" class="bg-navy text-white py-5">
+        <div class="container py-4">
+            <div class="row gy-4">
+                <div class="col-lg-6">
+                    <h6 class="text-info fw-bold text-uppercase">Contato e Atendimento</h6>
+                    <h2 class="fw-bold mb-4">Entre em Contato Conosco</h2>
+                    <p class="opacity-75 mb-4">Estamos prontos para atender você e oferecer as melhores soluções tributárias e financeiras para o seu negócio.</p>
+
+                    <div class="d-flex flex-column gap-3">
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="bg-info bg-opacity-10 p-3 rounded-circle text-info">
+                                <i class="bi bi-telephone-fill fs-4"></i>
+                            </div>
+                            <div>
+                                <h6 class="mb-0 fw-bold">Telefone</h6>
+                                <p class="mb-0 opacity-75">(84) 2144-0772</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="bg-info bg-opacity-10 p-3 rounded-circle text-info">
+                                <i class="bi bi-envelope-fill fs-4"></i>
+                            </div>
+                            <div>
+                                <h6 class="mb-0 fw-bold">E-mail</h6>
+                                <p class="mb-0 opacity-75">athirson@tmaenergiasolar.com</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="bg-info bg-opacity-10 p-3 rounded-circle text-info">
+                                <i class="bi bi-geo-alt-fill fs-4"></i>
+                            </div>
+                            <div>
+                                <h6 class="mb-0 fw-bold">Endereço</h6>
+                                <p class="mb-0 opacity-75">Rua Dr. José Américo, 220, Sala A - Maynard</p>
+                                <p class="mb-0 opacity-75">CEP: 59300-000 | Caicó - RN</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-4">
+                        <a href="https://maps.google.com/?q=Rua+Dr+Jose+Americo+220+Maynard+Caico+RN" target="_blank" class="btn btn-outline-info rounded-pill px-4">
+                            <i class="bi bi-map me-2"></i> Abrir no Google Maps
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <!-- Formulário de Contato -->
+                    <div class="bg-white text-dark p-4 rounded-4 shadow">
+                        <h4 class="fw-bold mb-3">Envie uma mensagem</h4>
+                        <form>
+                            <div class="mb-3">
+                                <label class="form-label fw-semibold">Nome Completo</label>
+                                <input type="text" class="form-control" placeholder="Seu nome" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label fw-semibold">E-mail ou Telefone</label>
+                                <input type="text" class="form-control" placeholder="Seu e-mail ou contato" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label fw-semibold">Assunto</label>
+                                <select class="form-select">
+                                    <option>Abertura de Empresa</option>
+                                    <option>Assessoria Tributária</option>
+                                    <option>Troca de Contador</option>
+                                    <option>Outros Assuntos</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label fw-semibold">Mensagem</label>
+                                <textarea class="form-control" rows="3" placeholder="Como podemos ajudar sua empresa?" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-info text-dark fw-bold w-100 py-2">Enviar Mensagem</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="bg-dark text-white py-4 border-top border-secondary">
+        <div class="container text-center text-md-between d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+            <div>
+                <p class="mb-0 small text-muted">
+                    © 2026 Precisa Contabilidade e Assessoria Tributária LTDA. Todos os direitos reservados.
+                </p>
+                <small class="text-muted">CNPJ: 47.082.386/0001-91 | Caicó - RN</small>
+            </div>
+            <div>
+                <a href="#inicio" class="text-info text-decoration-none small">Voltar ao topo <i class="bi bi-arrow-up"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão Flutuante do WhatsApp -->
+    <a href="https://wa.me/558421440772" class="btn-whatsapp-float" target="_blank">
+        <i class="bi bi-whatsapp fs-5"></i>
+        <span>Fale Conosco</span>
+    </a>
+
+    <!-- Bootstrap JS + Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
